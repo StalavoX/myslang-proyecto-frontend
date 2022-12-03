@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="img/Logojp.jpg">
+    <link rel="stylesheet" href="css/sugerencias-style.css">
+</head>
+<body>
+     <!-- Colores y bloques para el fondo del formulario -->
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="fondo" style="--i:0;"></div>
+            <div class="fondo" style="--i:1;"></div>
+            <div class="fondo" style="--i:2;"></div>
+            <div class="fondo" style="--i:3;"></div>
+            <div class="fondo" style="--i:4;"></div>
+
+    <!-- Termina el fondo y cuadros de animacion  -->      
+    
+    <!-- Contenedor del formulario  -->
+            <form action="sugerencia.php" method="post">
+            <div class="contenedor">
+                <div class="formulario">
+                    <img src="img/Logojp.jpg" class="logo" alt="">
+                        <h2>Contacto</h2>
+                    <div class="input">
+                       <input class="controls" type="text" name="nombres" id="nombres" placeholder="ingrese su nombre">
+                    </div>
+
+                    <div class="input">
+                        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="ingrese su apellido">
+                    </div>
+
+                    <div class="input">
+                        <input class="controls" type="text" name="correo" id="correo" placeholder="ingrese su correo">
+                    </div>
+
+                    <!-- Como hacerlo para los labels?-->
+                    <div class="input">
+                      <label for="tipo_sugerencia"></label> <br>
+                      <select class="botons" name="tipo_sugerencia" id="tipo_sugerencia">
+                        <option>Seleccione </option>
+                        <option>Petición</option>
+                        <option>Queja</option>
+                        <option>Reclamo</option>
+                        <option>Felicitacion</option>
+                       </select>
+                    </div>
+
+                  <!-- Como hacerlo para los labels?-->
+                  <div class="input">
+                    <label for="comentario"> <p>Escriba su mensaje</p>  </label> <br>
+                    <textarea class="comentario" name="comentario" id="comentario" cols="40" rows="10"></textarea> <br>
+                  </div>
+
+                  <center><div class="input">
+                    <input type="submit" placeholder="enviar">
+                </div></center>
+            
+            </div>
+            </div>
+
+        </div>
+    </form>
+    </section>
+</body>
+</html>
+
